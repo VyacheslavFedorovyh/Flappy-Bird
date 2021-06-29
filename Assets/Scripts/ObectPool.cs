@@ -34,7 +34,7 @@ public class ObectPool : MonoBehaviour
 
 	protected void DisableObjectAbroadScreen()
 	{
-		Vector3 disablePoint = _camera.ViewportToWorldPoint(new Vector2(0, 0.5f));
+		Vector3 disablePoint = _camera.ViewportToWorldPoint(new Vector3(0, 0.5f, _camera.transform.position.z));
 
 		foreach (var item in _pool)
 		{
