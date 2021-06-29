@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bird: {fileID: 1676698023}
-  _pipeGenerater: {fileID: 1241301900}
+  _generater: {fileID: 1241301900}
   _startScreen: {fileID: 289884207}
   _gameOverScreen: {fileID: 1529451795}
 --- !u!1 &986938406
@@ -781,6 +781,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1241301899}
   - component: {fileID: 1241301900}
+  - component: {fileID: 1241301901}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -814,12 +815,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64754986e3b813141a3d4680b20cc0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 1483200070}
   _capacity: 15
+  _container: {fileID: 1483200070}
   _tempPlane: {fileID: 7757698073381986565, guid: d79823b921713f64faad02910f68a832, type: 3}
-  _secondBetweenSpawn: 1.6
   _maxSpawnPositionY: 2
   _minSpawnPositionY: -1.2
+  _secondBetweenSpawn: 2
+--- !u!114 &1241301901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241301898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12075b75e2910d54c88c59623faf2866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _capacity: 20
+  _container: {fileID: 1010825948}
+  _tempPlane: {fileID: 1164117793245401790, guid: 0fcddf328f2e0f54a8a1c09bd376f02b, type: 3}
+  _maxSpawnPositionY: 4
+  _minSpawnPositionY: -2.5
+  _maxSecondBetweenSpawn: 1.4
+  _minSecondBetweenSpawn: 0.6
+  _maxCloudScale: 0.55
+  _minCloudScale: 1.15
 --- !u!1 &1483200070
 GameObject:
   m_ObjectHideFlags: 0

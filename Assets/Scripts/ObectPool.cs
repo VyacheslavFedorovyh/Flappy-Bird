@@ -5,12 +5,12 @@ using System.Linq;
 
 public class ObectPool : MonoBehaviour
 {
-    [SerializeField] private GameObject _container;
-    [SerializeField] private int _capacity;
+	[SerializeField] private int _capacity;
+	[SerializeField] private GameObject _container;
 
-    private Camera _camera;
+	private Camera _camera;
 
-    private List<GameObject> _pool = new List<GameObject>();
+	private List<GameObject> _pool = new List<GameObject>();
 
 	protected void Initialize(GameObject prefab)
 	{
@@ -38,10 +38,9 @@ public class ObectPool : MonoBehaviour
 
 		foreach (var item in _pool)
 		{
-			if(item.activeSelf == true)			
-				if (item.transform.position.x < disablePoint.x)
-					item.SetActive(false);
-			
+			if (item.activeSelf == true)
+				if (item.transform.position.x < disablePoint.x)				
+					item.SetActive(false);				
 		}
 	}
 

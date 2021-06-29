@@ -5,7 +5,7 @@ using UnityEngine;
 public class Game : MonoBehaviour
 {
 	[SerializeField] private Bird _bird;
-	[SerializeField] private PipeGenerater _pipeGenerater;
+	[SerializeField] private Generater _generater;
 	[SerializeField] private StartScreen _startScreen;
 	[SerializeField] private GameOverScreen _gameOverScreen;	
 
@@ -21,13 +21,13 @@ public class Game : MonoBehaviour
 		_startScreen.PlayButtonClick -= OnPlayButtonClick;
 		_gameOverScreen.RestartButtonClick -= OnRestartButtonClick;
 		_bird.GameOver -= OnGameOver;
-
 	}
 
 	private void Start()
 	{
 		Time.timeScale = 0;
 		_startScreen.Open();
+		_gameOverScreen.Close();
 	}
 
 	private void OnPlayButtonClick()
@@ -39,7 +39,7 @@ public class Game : MonoBehaviour
 	private void OnRestartButtonClick()
 	{
 		_gameOverScreen.Close();
-		_pipeGenerater.ResetPoll();
+		_generater.ResetPoll();
 		StartGame();
 	}
 
