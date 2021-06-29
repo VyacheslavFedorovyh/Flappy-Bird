@@ -838,8 +838,8 @@ MonoBehaviour:
   _tempPlane: {fileID: 1164117793245401790, guid: 0fcddf328f2e0f54a8a1c09bd376f02b, type: 3}
   _maxSpawnPositionY: 4
   _minSpawnPositionY: -2.5
-  _maxSecondBetweenSpawn: 1.4
-  _minSecondBetweenSpawn: 0.6
+  _maxSecondBetweenSpawn: 1.45
+  _minSecondBetweenSpawn: 0.65
   _maxCloudScale: 0.55
   _minCloudScale: 1.15
 --- !u!1 &1483200070
@@ -1440,8 +1440,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 51504a140ab91fb4b9a0e11758d52064, type: 2}
-  m_sharedMaterial: {fileID: -7791763601185333818, guid: 51504a140ab91fb4b9a0e11758d52064, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 5be6a12bb76429447b975100fc9e6f9e, type: 2}
+  m_sharedMaterial: {fileID: -6442304869098444292, guid: 5be6a12bb76429447b975100fc9e6f9e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 296.4
+  m_fontSize: 250
   m_fontSizeBase: 500
   m_fontWeight: 400
   m_enableAutoSizing: 1
